@@ -1,0 +1,11 @@
+# ADK Default Cursor!
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = default-cursors
+
+[Action]
+Description = Make a symbolic link /usr/share/icons/adk-dark/cursors /usr/share/icons/default/cursors
+When = PostTransaction
+Exec = /bin/sh -c "ln -s /usr/share/icons/adk-dark/cursors /usr/share/icons/default/cursors"
