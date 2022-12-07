@@ -1,0 +1,11 @@
+# ADK - Arch-release info
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = filesystem
+
+[Action]
+Description = Add ADK-Linux to /etc/arch-release
+When = PostTransaction
+Exec = /bin/sh -c "echo 'ADK-Linux' > /etc/arch-release && cp /usr/lib/adk-release /usr/lib/os-release && rm -f /usr/share/pixmaps/archlinux*"

@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+LSB_VERSION=1.4
+DISTRIB_ID="ADK-Linux"
+DISTRIB_RELEASE="2022.10"
+=======
+DISTRIB_ID="ADK"
+DISTRIB_RELEASE="rolling"
+>>>>>>> adf5b756dd454f6c3137e4aca6228b0fc5e64167
+DISTRIB_DESCRIPTION="ADK-Linux"
+LOGO=adklinux-logo
+LogoPath=/usr/share/pixmaps/adklinux-logo.svg

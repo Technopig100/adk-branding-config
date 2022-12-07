@@ -1,0 +1,24 @@
+NAME="ADK-Linux"
+PRETTY_NAME="ADK-Linux"
+<<<<<<< HEAD
+ID="ADK-Linux"
+BUILD_ID="rolling"
+ANSI_COLOR="33;35"
+=======
+ID=adk
+BUILD_ID=rolling
+ANSI_COLOR="33,35"
+>>>>>>> adf5b756dd454f6c3137e4aca6228b0fc5e64167
+HOME_URL="https://technopig100.github.io/Home/"
+DOCUMENTATION_URL="https://github.com/Technopig100/whatsnew/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://bugs.archlinux.org/"
+<<<<<<< HEAD
+LOGO=distributor-logo-adklinux.svg
+IMAGE_ID=adklinux
+IMAGE_VERSION=23.01
+LogoPath=/etc/xdg/adk-linux/distributor-logo-adklinux.svg
+=======
+LOGO=adklinux-logo
+LogoPath=/usr/share/pixmaps/adklinux-logo.svg
+>>>>>>> adf5b756dd454f6c3137e4aca6228b0fc5e64167
