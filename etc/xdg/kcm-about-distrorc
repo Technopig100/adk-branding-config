@@ -1,5 +1,4 @@
 [General]
 Name=ADK-Linux
-LOGO=adklinux-logo
-LogoPath=/usr/share/pixmaps/adklinux-logo.svg
+LogoPath=/etc/xdg/adk-linux/distributor-logo-adklinux.svg
 Website=https://technopig100.github.io/Home/
