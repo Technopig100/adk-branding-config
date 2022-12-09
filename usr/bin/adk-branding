@@ -1,0 +1,77 @@
+#!/bin/bash
+
+###### Rebrand of ADK-Linux os-release, lsb-release and replace arch-release with adk-release ####### 
+
+################## Setting Variables ###########################
+OS="/usr/lib/adk-release"
+lsb="/etc/adk-release"
+arch="/etc/arch-release"
+splash="/usr/share/systemd/bootctl/splash-arch.bmp"
+logo="/usr/share/pixmaps/archlinux*"
+cursors="/usr/share/icons/adk-dark/cursors/"
+################################################################
+
+# OS-release
+if [ -f "$OS" ]
+    then
+        cp -f /usr/lib/adk-release /usr/lib/os-release
+    else
+        tput setaf 1
+        echo "ADK-Linux's (os-release) is Missing"
+        tput sgr0
+fi
+
+# lsb-release
+if [ -f "$lsb" ]
+    then
+        cp -f  /etc/adk-release /etc/lsb-release
+    else
+        tput setaf 1
+        echo "ADK-Linux's (lsb-release) is Missing"
+        tput sgr0
+fi
+
+# adk-release
+if [ -f "$arch" ]
+    then
+        rm -f /etc/arch-release
+        tput setaf 2
+        echo "Removing arch-release"
+        tput sgr0
+    else
+    	:
+fi
+
+# Splash
+if [ -f "$splash" ]
+    then
+        rm -f /usr/share/systemd/bootctl/splash-arch.bmp
+        tput setaf 2
+        echo "Removing Arch Splash"
+        tput sgr0
+    else
+    	:
+fi
+
+# Arch logo's
+if [ -f "$logo" ]
+    then
+        rm -f /usr/share/pixmaps/archlinux*
+        tput setaf 2
+        echo "Removing Arch Logo's"
+        tput sgr0
+    else
+    	:
+fi
+
+# Defualt Cursor
+if [ -d "$cursors" ]
+    then
+        unlink /usr/share/icons/default/cursors 
+        ln -s /usr/share/icons/adk-dark/cursors /usr/share/icons/default/cursors
+        tput setaf 2
+        echo "Setting Defualt's"
+        tput sgr0
+    else
+        :
+fi
