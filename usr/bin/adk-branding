@@ -7,7 +7,7 @@ OS="/usr/lib/adk-release"
 lsb="/etc/adk-release"
 arch="/etc/arch-release"
 splash="/usr/share/systemd/bootctl/splash-arch.bmp"
-logo="/usr/share/pixmaps/archlinux*"
+logo="/usr/share/pixmaps/archlinux-logo.png"
 cursors="/usr/share/icons/adk-dark/cursors/"
 ################################################################
 
