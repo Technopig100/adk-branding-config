@@ -75,3 +75,16 @@ if [ -d "$cursors" ]
     else
         :
 fi
+
+###################### Preset Script ########################
+
+preset="/etc/mkinitcpio.d/linux.preset.pacnew"
+
+if [ -f "$preset" ]
+    then
+        sed -i 's/archiso*/adklinux/g' /etc/mkinitcpio.d/linux.preset.pacnew
+        mv -f /etc/mkinitcpio.d/linux.preset.pacnew /etc/mkinitcpio.d/linux.preset
+        echo "Adding New Linux-peset"
+    else
+        :
+fi
