@@ -68,10 +68,7 @@ fi
 if [ -d "$cursors" ]
     then
         unlink /usr/share/icons/default/cursors 
-        ln -s /usr/share/icons/adk-dark/cursors /usr/share/icons/default/cursors
-        tput setaf 2
-        echo "Setting Defualt's"
-        tput sgr0
+        ln -s /usr/share/icons/adk-dark/cursors /usr/share/icons/default/cursors        
     else
         :
 fi
@@ -84,7 +81,9 @@ if [ -f "$preset" ]
     then
         sed -i 's/archiso*/adklinux/g' /etc/mkinitcpio.d/linux.preset.pacnew
         mv -f /etc/mkinitcpio.d/linux.preset.pacnew /etc/mkinitcpio.d/linux.preset
+        tput setaf 1
         echo "Adding New Linux-peset"
+        tput sgr0
     else
         :
 fi
