@@ -1,11 +1,11 @@
 NAME="ADK-Linux"
-VERSION="23.01 (Jan)"
+VERSION="23.02 (Feb)"
 ANSI_COLOR="33;35"
 ID=adklinux
 ID_LIKE="archlinux"
-PRETTY_NAME="ADK-Linux 23.01"
+PRETTY_NAME="ADK-Linux 23.02"
 HOME_URL="https://technopig100.github.io/Home/"
 DOCUMENTATION_URL="https://technopig100.github.io/Home/"
 SUPPORT_URL="https://technopig100.github.io/Home/"
 BUG_REPORT_URL="https://bugs.archlinux.org/"
-VERSION_CODENAME=Jan
+VERSION_CODENAME=Feb
