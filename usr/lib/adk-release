@@ -1,4 +1,5 @@
 NAME="ADK-Linux"
+GRUB_DISTRIBUTOR="ADK"
 VERSION="23.02 (Feb)"
 ANSI_COLOR="33;35"
 ID=adklinux
